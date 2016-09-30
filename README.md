@@ -29,4 +29,10 @@ Paste the codes below into your configuration file and you:
            #'(lambda ()
                (define-key sass-mode-map "\C-ci" 'sass-doc-insert-function-doc)
                (define-key sass-mode-map "@" 'sass-doc-insert-tag)))
+ 
+ ;; Or with SCSS
+ (add-hook 'scss-mode-hook
+           #'(lambda ()
+               (define-key scss-mode-map "\C-ci" 'sass-doc-insert-function-doc)
+               (define-key scss-mode-map "@" 'sass-doc-insert-tag)))
 ```
